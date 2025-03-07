@@ -1,0 +1,23 @@
+# Source code
+*.ts
+!*.d.ts
+
+# Config files
+tsconfig.json
+rollup.config.js
+vitest.config.ts
+.gitignore
+
+# Tests
+*.test.ts
+*.spec.ts
+
+# Development folders
+node_modules/
+coverage/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,53 @@
+{
+  "name": "usefsm",
+  "version": "1.0.0",
+  "description": "a dead simple finite state machine for React",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/types/useFSM.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "build": "npm run build:clean && npm run build:types && npm run build:js",
+    "build:clean": "rimraf dist",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "rollup -c",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "keywords": [
+    "react",
+    "finite",
+    "state",
+    "machine",
+    "fsm",
+    "hook",
+    "react-hooks"
+  ],
+  "author": "Geoff Miller",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@testing-library/dom": "^9.3.4",
+    "@testing-library/react": "^14.1.2",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitest/coverage-v8": "^3.0.8",
+    "happy-dom": "^17.3.0",
+    "jsdom": "^26.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rimraf": "^5.0.10",
+    "rollup": "^4.34.9",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.3.3",
+    "vitest": "^3.0.8"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  }
+}
