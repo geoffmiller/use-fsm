@@ -5,6 +5,8 @@ A dead simple finite state machine hook for React.
 ## Installation
 
 ```bash
+// not distributed to npm yet while in development
+
 npm install usefsm
 # or
 yarn add usefsm
@@ -125,6 +127,12 @@ const { state, send, is } = useFSM<AppState, AppEvent>("idle", {
   // ...
 });
 ```
+
+## Test Coverage
+
+## Test Coverage
+
+![Test Coverage](use-fsm-test-coverage-06052025.png)
 
 ## License
 
