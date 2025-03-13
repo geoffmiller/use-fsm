@@ -4,13 +4,9 @@ A dead simple finite state machine hook for React.
 
 ## Installation
 
-```bash
-// not distributed to npm yet while in development
+It's recommended to just copy the [useFSM.ts](https://github.com/geoffmiller/use-fsm/blob/main/useFSM.ts) into your codebase. 
 
-npm install usefsm
-# or
-yarn add usefsm
-```
+Copy the [useFSM.test.ts](https://github.com/geoffmiller/use-fsm/blob/main/useFSM.test.ts) test file as well if you are using vitest/react-testing-library
 
 ## Usage
 
